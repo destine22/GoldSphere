@@ -1,0 +1,108 @@
+
+<!-- 
+  GoldSphere Email Confirmation Template
+  Paste this into your Supabase dashboard:
+  Authentication > Email Templates > Confirm signup
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirm Your GoldSphere Email</title>
+  <style>
+    body {
+      background-color: #1A0800;
+      margin: 0;
+      padding: 32px 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, #3D2010, #4A2C15);
+      border: 1px solid #8B5E3C;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .header {
+      background: linear-gradient(135deg, #6B3A1F, #D4A017);
+      padding: 32px;
+      text-align: center;
+    }
+    .header-title {
+      color: #F5E8C0;
+      font-family: Georgia, serif;
+      font-size: 28px;
+      font-weight: bold;
+      margin: 0;
+    }
+    .header-tagline {
+      color: #F5E8C0;
+      font-size: 14px;
+      opacity: 0.9;
+      margin: 8px 0 0 0;
+    }
+    .content {
+      padding: 32px;
+    }
+    .content-title {
+      color: #F0C040;
+      font-family: Georgia, serif;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0 0 24px 0;
+    }
+    .content-text {
+      color: #E8D5A3;
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0 0 24px 0;
+    }
+    .confirm-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #D4A017, #E8780C);
+      color: #1A0800;
+      font-weight: bold;
+      padding: 14px 32px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .footer {
+      background: #1A0800;
+      padding: 24px 32px;
+      text-align: center;
+    }
+    .footer-text {
+      color: #8B5E3C;
+      font-size: 12px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="header">
+      <h1 class="header-title">GoldSphere</h1>
+      <p class="header-tagline">Taste the Roots of Africa</p>
+    </div>
+    <div class="content">
+      <h2 class="content-title">Confirm Your GoldSphere Email</h2>
+      <p class="content-text">
+        Thank you for joining GoldSphere! Please click the button below to confirm your email address and complete your registration.
+      </p>
+      <p style="text-align: center; margin-bottom: 32px;">
+        <a href="{{ .ConfirmationURL }}" class="confirm-button">Confirm Email</a>
+      </p>
+      <p class="content-text">
+        If you didn't create this account, you can safely ignore this email.
+      </p>
+    </div>
+    <div class="footer">
+      <p class="footer-text">You are receiving this email because you have an account at GoldSphere.</p>
+      <p class="footer-text">Amsterdam, Netherlands</p>
+      <p class="footer-text">&copy; GoldSphere 2025. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
